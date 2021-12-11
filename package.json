@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "bin": "dist/index.js",
   "scripts": {
     "dev-s": "ts-node ./src/index.ts -s -d D:/test/files_server -i /node_modules /.git",
     "dev-c": "ts-node ./src/index.ts -c -d D:/test/files_client -r localhost -i /node_modules /.git",
-    "build": "tsc",
+    "compile": "tsc",
+	"build": "tsc && pkg .",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "targets": [ "node16-win-x64", "node16-macos-x64", "node16-linux-x64" ],
+    "outputPath": "build"
   },
   "keywords": [],
   "author": "",

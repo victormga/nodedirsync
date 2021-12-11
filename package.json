@@ -2,10 +2,10 @@
   "name": "nodedirsync",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "dev-s": "ts-node . -s -d D:/test/files_server -i /node_modules /.git",
-    "dev-c": "ts-node . -c -d D:/test/files_client -r localhost -i /node_modules /.git",
+    "dev-s": "ts-node ./src/index.ts -s -d D:/test/files_server -i /node_modules /.git",
+    "dev-c": "ts-node ./src/index.ts -c -d D:/test/files_client -r localhost -i /node_modules /.git",
     "build": "tsc",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"

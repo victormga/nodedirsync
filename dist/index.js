@@ -45,7 +45,7 @@ if (args.help) {
     console.log(" -d <DIRECTORY>, --directory <DIRECTORY>");
     console.log("\t root directory to watch. absolute path only. defaults to cwd");
     console.log(" -i [<REGEXP>], --ignore [<REGEXP>]");
-    console.log("\t regexp to ignore. multi entries accepted");
+    console.log("\t ignore list. multi entries accepted");
     console.log(" -p PORT, --port PORT");
     console.log("\t port used to listen/connect. defaults to 3337");
     console.log(" -r REMOTE, --remote REMOTE");

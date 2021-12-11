@@ -1,0 +1,32 @@
+{
+  "name": "nodedirsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev-s": "ts-node . -s -d D:/test/files_server -i /node_modules /.git",
+    "dev-c": "ts-node . -c -d D:/test/files_client -r localhost -i /node_modules /.git",
+    "build": "tsc",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "command-line-args": "^5.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6",
+    "node-watch": "^0.7.2",
+    "recursive-readdir-async": "^1.2.0",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.12",
+    "@types/node-fetch": "^2.5.12"
+  }
+}

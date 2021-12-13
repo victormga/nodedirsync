@@ -1,10 +1,14 @@
 {
-  "name": "nodedirsync",
-  "version": "1.0.0",
+  "name": "@victormga/nodedirsync",
+  "version": "1.0.1",
   "description": "Synchronize files between two computers, on the same local network or over the internet.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "homepage": "https://github.com/victormga/nodedirsync#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victormga/nodedirsync.git"
+  },
   "scripts": {
     "dev-s": "ts-node ./src/index.ts -s -d D:/test/files_server -i /node_modules /.git",
     "dev-c": "ts-node ./src/index.ts -c -d D:/test/files_client -r localhost -i /node_modules /.git",

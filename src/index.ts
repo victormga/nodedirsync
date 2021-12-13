@@ -3,6 +3,8 @@ import client from "./client";
 import clparser from "command-line-args";
 import colors from "colors/safe";
 
+const VERSION = "1.0.1";
+
 let args;
 try {
 	args = clparser([
@@ -22,7 +24,7 @@ try {
 	process.exit(1);
 }
 
-console.log(colors.green("> NodeDirSync v1.0.0"));
+console.log(colors.green(`> NodeDirSync v${VERSION}`));
 console.log("");
 
 if (args.version) {

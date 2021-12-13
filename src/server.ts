@@ -14,7 +14,7 @@ export default function(dir: string, port: number, ignore: string[], quiet: bool
 	const server = http.createServer(app);
 	const io = new Server(server);
 
-	app.use("/download", express.static(basedir));
+	app.use("/download", express.static(basedir, { dotfiles: "allow" }));
 
 	io.on("connection", async (socket) => { 
 		console.log(colors.bold(colors.yellow("> New client connected")));

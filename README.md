@@ -41,7 +41,7 @@ Download or clone the repository.
 
 To run as a server, run something like:
 
--  `node . \--server --directory /home/myserveruser/myserverfolder` or
+-  `node . --server --directory /home/myserveruser/myserverfolder` or
 
 -  `node . -s -d /home/myserveruser/myserverfolder`
 

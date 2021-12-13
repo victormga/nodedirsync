@@ -7,6 +7,7 @@ const server_1 = __importDefault(require("./server"));
 const client_1 = __importDefault(require("./client"));
 const command_line_args_1 = __importDefault(require("command-line-args"));
 const safe_1 = __importDefault(require("colors/safe"));
+const VERSION = "1.0.1";
 let args;
 try {
     args = (0, command_line_args_1.default)([
@@ -26,7 +27,7 @@ catch (e) {
     console.log("use -h or --help to see the options");
     process.exit(1);
 }
-console.log(safe_1.default.green("> NodeDirSync v1.0.0"));
+console.log(safe_1.default.green(`> NodeDirSync v${VERSION}`));
 console.log("");
 if (args.version) {
     process.exit(0);

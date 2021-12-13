@@ -16,7 +16,7 @@ function default_1(dir, port, ignore, quiet) {
     const app = (0, express_1.default)();
     const server = http_1.default.createServer(app);
     const io = new socket_io_1.Server(server);
-    app.use("/download", express_1.default.static(basedir));
+    app.use("/download", express_1.default.static(basedir, { dotfiles: "allow" }));
     io.on("connection", async (socket) => {
         console.log(safe_1.default.bold(safe_1.default.yellow("> New client connected")));
         const files = await (0, recursive_readdir_async_1.list)(basedir, {
